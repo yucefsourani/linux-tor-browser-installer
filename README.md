@@ -20,6 +20,6 @@ www.arfedora.blogspot.com
 # To Use
  * ``` cd && git clone https://github.com/yucefsourani/linux-tor-browser-installer ```
 
- * ``` sudo chmod 755 ~/linux-tor-browser-installer/linux-tor-browser-installer.py ```
+ * ``` chmod 755 ~/linux-tor-browser-installer/linux-tor-browser-installer.py ```
 
  * ``` ~/linux-tor-browser-installer/linux-tor-browser-installer.py```

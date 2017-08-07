@@ -27,8 +27,9 @@
 from bs4 import BeautifulSoup
 import urllib
 from os.path import join,basename,isdir,isfile
-from os import uname,system,geteuid,chdir,getcwd
+from os import uname,system,geteuid,chdir,getcwd,remove
 from pwd import getpwuid
+from shutil import rmtree
 import tarfile
 import gnupg
 
@@ -113,10 +114,20 @@ StartupWMClass=Tor Browser
 		while True:
 			system("clear")
 			print ("\nNothing To Do.")
-			print ("Q To Quit || F To Force Install.")
+			print ("Q To Quit || F To Force Install Tor Browser || R To Remove Tor Browser.")
 			answer = input("- ").strip()
 			if answer == "q" or answer == "Q":
 				exit("\nBye...")
+			elif answer == "r" or answer == "R":
+				try:
+					rmtree(tor_folder)
+				except:
+					exit("Remove {} Fail.".format(tor_folder))
+				try:
+					remove(tor_desktop_entry)
+				except:
+					exit("Remove {} Fail.".format(tor_desktop_entry))
+				exit("\nRemove Done.")
 			elif answer == "f" or answer == "F":
 				print ("\n")
 				break

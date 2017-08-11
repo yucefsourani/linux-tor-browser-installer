@@ -122,6 +122,8 @@ def get_real_ip(status=False):
 	return opurl["origin"]
 	
 if __name__ == "__main__":
+	system("clear")
+	print ("\nhttps://arfedora.blogspot.com\n")
 	help_ = """Version : 0.2
 
 linux-tor-browser-installer --without-check-sig || -s       ==> Install without Check File Signature
@@ -187,6 +189,7 @@ StartupWMClass=Tor Browser
 	if isdir(tor_folder) and isfile(tor_desktop_entry):
 		while True:
 			system("clear")
+			print ("https://arfedora.blogspot.com")
 			print ("\nNothing To Do.")
 			print ("Q To Quit || F To Force Reinstall Tor Browser || R To Remove Tor Browser.")
 			answer = input("- ").strip()

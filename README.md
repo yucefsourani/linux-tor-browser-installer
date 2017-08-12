@@ -10,10 +10,10 @@ www.arfedora.blogspot.com
  * ``` python3-beautifulsoup4 ```
  * ``` python3-requests ```
  * ``` tor ```
-
+ * ``` python3-dbus ```
 
 # Install Requires (Fedora)
- * ``` sudo dnf install git tor python3-requests python3-beautifulsoup4 python3-gnupg ```
+ * ``` sudo dnf install git tor python3-dbus python3-requests python3-beautifulsoup4 python3-gnupg ```
 
 
 

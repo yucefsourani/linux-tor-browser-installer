@@ -38,6 +38,8 @@ import sys
 import dbus
 import subprocess
 import json
+import os
+
 
 def import_key():
 	gpg=gnupg.GPG(gnupghome=join(home,".gnupg"))
@@ -122,6 +124,9 @@ def get_real_ip(status=False):
 	return opurl["origin"]
 	
 if __name__ == "__main__":
+	if os.getuid()==0:
+		exit("Run Script Without Root Permissions.")
+		
 	system("clear")
 	print ("\nhttps://arfedora.blogspot.com\n")
 	help_ = """Version : 0.2
@@ -155,7 +160,7 @@ linux-tor-browser-installer --without-tor  || -t            ==> Download Tor Bro
 	
 	
 	agent = {"User-Agent":"Mozilla/5.0"}
-	system('setterm -cursor off')
+	#system('setterm -cursor off')
 
 	arch              = uname().machine
 

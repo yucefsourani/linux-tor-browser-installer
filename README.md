@@ -18,7 +18,7 @@ www.arfedora.blogspot.com
 # Copr Repository (For Fedora)
  * ``` sudo  dnf copr enable youssefmsourani/linux-tor-browser-installer -y  ```
  * ``` sudo dnf install linux-tor-browser-installer -y ```
- * ``` linux-tor-browser-installer ``
+ * ``` linux-tor-browser-installer ```
   
 # To Use
  * ``` cd && git clone https://github.com/yucefsourani/linux-tor-browser-installer ```

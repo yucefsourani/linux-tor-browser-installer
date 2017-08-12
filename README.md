@@ -15,8 +15,11 @@ www.arfedora.blogspot.com
 # Install Requires (Fedora)
  * ``` sudo dnf install git tor python3-dbus python3-requests python3-beautifulsoup4 python3-gnupg ```
 
-
-
+# Copr Repository (For Fedora)
+ * ``` sudo  dnf copr enable youssefmsourani/linux-tor-browser-installer -y  ```
+ * ``` sudo dnf install linux-tor-browser-installer -y ```
+ * ``` linux-tor-browser-installer ``
+  
 # To Use
  * ``` cd && git clone https://github.com/yucefsourani/linux-tor-browser-installer ```
 

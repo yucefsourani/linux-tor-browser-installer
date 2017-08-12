@@ -1,4 +1,4 @@
-# linux-tor-browser-installer 0.2
+# linux-tor-browser-installer 0.3
 Python Script To Install Tor Browser
 
 www.arfedora.blogspot.com

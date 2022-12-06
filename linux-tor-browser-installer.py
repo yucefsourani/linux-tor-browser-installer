@@ -58,6 +58,8 @@ def check_valid_sg(stream,data_file):
 	
 def extract_tar_xz(location):
 	with tarfile.open(location) as f:
+                safe_extract(f, home)
+		
 def is_within_directory(directory, target):
 	
 	abs_directory = os.path.abspath(directory)
@@ -77,7 +79,7 @@ def safe_extract(tar, path=".", members=None, *, numeric_owner=False):
 	tar.extractall(path, members, numeric_owner=numeric_owner) 
 	
 
-safe_extract(f, home)
+
 		
 
 def dm(opurl,name,size,location,sym="#",symb="-",symx="[",symy="]",chunk_size = 600):

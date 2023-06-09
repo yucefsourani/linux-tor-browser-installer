@@ -204,8 +204,8 @@ StartupWMClass=Tor Browser
 """.format(tor_folder,tor_folder,tor_folder,tor_folder)
 
 	if arch == "x86_64":
-		button_class = "button lin-tbb64"
-		sig = "lin-tbb64-sig"
+		button_class = "downloadLink"
+		sig = "link"
 	else:
 		button_class = "button lin-tbb32"
 		sig = "lin-tbb32-sig"
